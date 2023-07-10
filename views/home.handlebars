@@ -102,6 +102,20 @@
     border-radius: 30px;
     left: -51px;
       }
+
+      .rightSection img{
+          animation: fadein 6s ease-in-out;
+      }
+      @keyframes fadein{
+        0%{
+          opacity: 0;
+          border-radius: 0;
+        }
+        100%{
+          opacity: 1;
+          border-radius: 30px;
+        }
+      }
 </style>
 <main>
       <section class="firstSection">
@@ -175,7 +189,7 @@
           "App Developer",
           "Web Developer",
         ],
-        typeSpeed: 20,
+        typeSpeed: 80,
       });
     </script>
     <script type="text/javascript">
