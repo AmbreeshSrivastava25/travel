@@ -90,11 +90,12 @@
         <div class="left"><span class="company">ambressian</span></div>
         <div class="right">
           <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/projects">Projects</a></li>
-            <li><a href="">Logout</a></li>
+            <li id="logoutfinal"><a href="/">Logout</a></li>
           </ul>
+          {{!-- <button onclick="goOut()">Logout</button> --}}
         </div>
       </nav>
     </header>
@@ -155,6 +156,12 @@
         Copyright &#169; ambressian.com | All rights reserved.
       </div>
     </footer>
-
+<script>
+  document.getElementById("logoutfinal").addEventListener("click",function() {
+    
+    window.location.replace("/");
+    alert("Log out successful !!");
+    });
+</script>
 </body>
 </html>

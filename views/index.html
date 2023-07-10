@@ -2,344 +2,256 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ambressian -Developer Portfolio</title>
-    <!-- <link href="index.html" rel="import" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Itim&family=Pacifico&display=swap"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(0, 0, 33);
-        color: white;
-        /* font-family: 'Pacifico',cursive; */
-      }
-      .left .company {
-        font-family: "Pacifico", cursive;
-        font-size: 45px;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgb(0, 0, 60);
-      }
-      nav ul {
-        display: flex;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      nav ul li a:hover {
-        color: rgb(124, 188, 244);
-        /* font-size: 20px; */
-        font-size: 1.04rem;
-      }
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        margin: 20px 0px;
-      }
-      .firstSection > div {
-        width: 30%;
-      }
-      .firstSection .leftSection {
-        /* background-color: blanchedalmond; */
-        margin: 90px 0px 0px 0px;
-        font-size: 3rem;
-        align-items: center;
-      }
-      /* .firstSection .rightSection{
-        background-color: blanchedalmond;
-      } */
-      .rightSection img {
-        width: 80%;
-        margin: 50px 0px 0px 0px;
-        border-radius: 30px;
-      }
-
-      .yellow {
-        color: rgb(244, 244, 72);
-      }
-      #element {
-        color: rgb(112, 244, 72);
-      }
-      .secondSection {
-        max-width: 80vw;
-        margin: auto;
-        height: 80vh;
-      }
-      main hr {
-        border: 0px;
-        background-color: rgb(84, 167, 239);
-        height: 2px;
-        margin: 40px 84px;
-      }
-      .textgrey {
-        color: grey;
-      }
-      .secondSection .box {
-        background: white;
-        margin: 170px 0px;
-        width: 80vw;
-        height: 2px;
-        display: flex;
-      }
-      .secondSection .vertical {
-        height: 60px;
-        width: 1px;
-        background-color: white;
-        margin: 0px 90px;
-      }
-      .image-top {
-        width: 98px;
-        position: relative;
-        top: -141px;
-        border-radius: 30px;
-        left: -53px;
-      }
-      .vertical-title {
-        position: relative;
-        top: -51px;
-        width: 150px;
-        left: -22px;
-      }
-      .vertical-desc {
-        position: relative;
-        top: -40px;
-        width: 80px;
-        color: grey;
-        left: -21px;
-        font-size: 12px;
-      }
-      footer {
-        background-color: rgb(43 55 65);
-        /* height: 233px; */
-      }
-      .footer {
-        display: flex;
-        padding: 23px 122px;
-        justify-content: space-evenly;
-      }
-      .footer ul {
-        list-style: none;
-      }
-      footer .footer-rights {
-        color: grey;
-        text-align: center;
-      }
-      .leftSection .btn {
-        padding: 12px;
-        background: #321868;
-        color: white;
-        border: 1px solid white;
-        border-radius: 6px;
-        font-size: 15px;
-      }
-      .leftSection .buttons {
-        padding: 50px 0px;
-      }
-      .footer-first a {
-        height: 100px;
-        width: 100px;
-        margin: 20px 5px;
-        border-radius: 50px;
-      }
-      .footer-first a i {
-        transition: all 0.3s linear;
-      }
-      .footer-first a:hover i {
-        transform: scale(1.2);
-      }
-      .leftSection .buttons .btn{
-        transition: all 0.3s linear;
-      }
-      .leftSection .buttons .btn:hover {
-        cursor: pointer;
-        transform: scale(1.1);
-      }
-      /* @media screen and (max-width: 1000px) {
-         body{
-                background-color: red;
-         }
-       } */
-    </style>
+    <!-- <link href="pagetwo.html" rel="import" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="left"><span class="company">ambressian</span></div>
-        <div class="right">
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav-logo">
+          <p>ambressian</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="#">Contact me</a></li>
+            <li><a href="#" class="link active">Home</a></li>
+            <li><a href="#" class="link">Blog</a></li>
+            <li><a href="#" class="link">Services</a></li>
+            <li><a href="#" class="link">About</a></li>
           </ul>
+        </div>
+        <div class="nav-button">
+          <button class="btn white-btn" id="loginBtn" onclick="login()">
+            Sign In
+          </button>
+          <button class="btn" id="registerBtn" onclick="register()">
+            Sign Up
+          </button>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="bx bx-menu" onclick="myMenuFunction()"></i>
         </div>
       </nav>
-    </header>
 
-    <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          Hi,My name is <span class="yellow">Ambreesh</span>
-          <div>I am a passionate</div>
-          <!-- <div>Web Developer!</div> -->
-          <span id="element"></span>
-          <div class="buttons">
-            <button class="btn">Download Resume</button>
-            <button class="btn" id="myButton">Visit Github</button>
+      <!----------------------------- Form box ----------------------------------->
+      <div class="form-box">
+        <!------------------- login form -------------------------->
+
+        <div class="login-container" id="login">
+          <div class="top">
+            <span
+              >Don't have an account?
+              <a href="#" onclick="register()">Sign Up</a></span
+            >
+            <header>Login</header>
           </div>
-        </div>
-        <div class="rightSection">
-          <img src="Amsterdam.jpg" alt="Place is Amsterdam" />
-        </div>
-      </section>
-      <hr />
-      <section class="secondSection">
-        <span class="textgrey">Where I have travelled so far</span>
-        <h1>Travel Experience</h1>
-        <div class="box">
-          <div class="vertical">
-            <img
-              src="amsthree.jpg"
-              alt="Amsterdam Centraal"
-              class="image-top"
+          <div class="input-box">
+            <input
+              type="text"
+              class="input-field"
+              id="emaillogin"
+              placeholder="Email"
             />
-            <div class="vertical-title">Netherlands</div>
-            <div class="vertical-desc">
-              Amsterdam is one of the most beautiful place to visit.
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" class="input-field" id="passwordlogin" placeholder="Password" />
+            <i class="bx bx-lock-alt"></i>
+          </div>
+          <div class="input-box">
+            <input type="submit" class="submit" id="submitlogin" value="Sign In" />
+          </div>
+          <div class="two-col">
+            <div class="one">
+              <input type="checkbox" id="login-check" />
+              <label for="login-check"> Remember Me</label>
+            </div>
+            <div class="two">
+              <label><a href="#">Forgot password?</a></label>
             </div>
           </div>
-          <div class="vertical">
-            <img src="paris.jpg" alt="Amsterdam Centraal" class="image-top" />
-            <div class="vertical-title">France</div>
-            <div class="vertical-desc">
-              Paris is one of the most beautiful place to visit.
+        </div>
+
+        <!------------------- registration form -------------------------->
+        <div class="register-container" id="register">
+          <div class="top">
+            <span
+              >Have an account? <a href="#" onclick="login()">Login</a></span
+            >
+            <header>Sign Up</header>
+          </div>
+          <div class="two-forms">
+            <div class="input-box">
+              <input type="text" class="input-field" placeholder="Firstname" />
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+              <input type="text" class="input-field" placeholder="Lastname" />
+              <i class="bx bx-user"></i>
             </div>
           </div>
-          <div class="vertical">
-            <img src="belgium.jpg" alt="Amsterdam Centraal" class="image-top" />
-            <div class="vertical-title">Belgium</div>
-            <div class="vertical-desc">
-              Antwerp is one of the most beautiful place to visit.
+          <div class="input-box">
+            <input type="text" class="input-field" id="emailregister" placeholder="Email" />
+            <i class="bx bx-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" class="input-field" id="passwordregister" placeholder="Password" />
+            <i class="bx bx-lock-alt"></i>
+          </div>
+          <div class="input-box">
+             <input type="submit" class="submit" value="Register" id="finalreg" />    <!-- check this-->
+          </div>
+          <div class="two-col">
+            <div class="one">
+              <input type="checkbox" id="register-check" />
+              <label for="register-check"> Remember Me</label>
+            </div>
+            <div class="two">
+              <label><a href="#">Terms & conditions</a></label>
             </div>
           </div>
-          <div class="vertical">
-            <img src="Germany.jpg" alt="Amsterdam Centraal" class="image-top" />
-            <div class="vertical-title">Germany</div>
-            <div class="vertical-desc">
-              Cologne is one of the most beautiful place to visit.
-            </div>
-          </div>
-          <!-- <div class="vertical">
-            <img
-              src="Amritsar.jpg"
-              alt="Amsterdam Centraal"
-              class="image-top"
-            />
-            <div class="vertical-title">India</div>
-            <div class="vertical-desc">
-              Amritsar is one of the most beautiful place to visit.
-            </div>
-          </div> -->
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <div class="footer-first">
-          <h3>Ambressian Tourism</h3>
-          <a href="https://www.instagram.com/ambressian/" target="_blank">
-            <i
-              class="fa fa-2x fa-instagram"
-              style="color: #ef25c7; height: 50px"
-            ></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ambreesh-srivastava-38b458229/"
-            target="_blank"
-          >
-            <i
-              class="fa fa-2x fa-linkedin"
-              style="color: #2528ef; height: 50px"
-            ></i>
-          </a>
-          <a href="https://github.com/AmbreeshSrivastava25" target="_blank">
-            <i
-              class="fa fa-2x fa-github"
-              style="color: #141314; height: 50px"
-            ></i>
-          </a>
-        </div>
-        <div class="footer-second">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-        <div class="footer-third">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-        <div class="footer-fourth">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
         </div>
       </div>
-      <div class="footer-rights">
-        Copyright &#169; ambressian.com | All rights reserved.
-      </div>
-    </footer>
+    </div>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Traveller",
-          "Chess Player",
-          "App Developer",
-          "Web Developer",
-        ],
-        typeSpeed: 20,
-      });
+      function myMenuFunction() {
+        var i = document.getElementById("navMenu");
+
+        if (i.className === "nav-menu") {
+          i.className += " responsive";
+        } else {
+          i.className = "nav-menu";
+        }
+      }
     </script>
-    <script type="text/javascript">
-      document.getElementById("myButton").onclick = function () {
-          location.href = "https://github.com/AmbreeshSrivastava25";
+
+    <script>
+      var a = document.getElementById("loginBtn");
+      var b = document.getElementById("registerBtn");
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+
+      function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+      }
+
+      function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+      }
+    </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signOut,
+      } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyB7juU-jv1iU70XUEkBQBHGeS8ujLJBfiA",
+        authDomain: "webtwo-ca1d0.firebaseapp.com",
+        projectId: "webtwo-ca1d0",
+        storageBucket: "webtwo-ca1d0.appspot.com",
+        messagingSenderId: "365365579259",
+        appId: "1:365365579259:web:89919e9abbc0d084d24f5e",
+        measurementId: "G-7EM07C9S5V",
       };
-  </script>
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const auth = getAuth();
+        //console.log(app);
+         //----- New Registration code start	
+         //prevcode register was a button id  
+	  document.getElementById("finalreg").addEventListener("click", function() {
+		  var email =  document.getElementById("emailregister").value;
+		  var password = document.getElementById("passwordregister").value;
+		  //For new registration
+		  createUserWithEmailAndPassword(auth, email, password) //predefined method firebase
+		  .then((userCredential) => {
+		    // Signed in 
+		    const user = userCredential.user;
+		    console.log(user);
+		    alert("Registration successful !!");
+        // window.location.href="/home";
+        window.location.replace("/home");
+
+		    // ...
+		  })
+		  .catch((error) => {
+		    const errorCode = error.code;
+		    const errorMessage = error.message;
+		    // ..
+		    console.log(errorMessage);
+		    alert(error);
+		  });		  		  
+	  });
+	  //----- End
+
+	  //----- Login code start	  
+	  document.getElementById("submitlogin").addEventListener("click", function() {
+		  var email =  document.getElementById("emaillogin").value;
+		  var password = document.getElementById("passwordlogin").value;
+
+		  signInWithEmailAndPassword(auth, email, password)
+		  .then((userCredential) => {
+		    // Signed in 
+		    const user = userCredential.user;
+		    console.log(user);
+		    alert(user.email+" Login successful !!");
+		   // document.getElementById('logout').style.display = 'block'; //not added this yet
+            // window.open("/home");//opens on a new page
+            // window.location.href="/home";
+            window.location.replace("/home");
+		    // ...
+		  })
+		  .catch((error) => {
+		    const errorCode = error.code;
+		    const errorMessage = error.message;
+		    console.log(errorMessage);
+		    alert(errorMessage);
+		  });		  		  
+	  });
+	  //----- End
+
+	  //----- Logout code start	  
+	//   document.getElementById("logout").addEventListener("click", function() {
+	// 	  signOut(auth).then(() => {
+	// 		  // Sign-out successful.
+	// 		  console.log('Sign-out successful.');
+	// 		  alert('Sign-out successful.');
+	// 		  document.getElementById('logout').style.display = 'none';
+	// 		}).catch((error) => {
+	// 		  // An error happened.
+	// 		  console.log('An error happened.');
+	// 		});		  		  
+	//   });
+	  //----- End
+    </script>
   </body>
 </html>
