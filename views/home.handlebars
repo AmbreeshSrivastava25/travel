@@ -1,5 +1,185 @@
-<div class="container">
-  <div class="first">
-    <h1>Example App: Home</h1>
-  </div>
-</div>
+<style>
+  .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0px;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .firstSection .leftSection {
+        /* background-color: blanchedalmond; */
+        margin: 90px 0px 0px 0px;
+        font-size: 3rem;
+        align-items: center;
+      }
+      /* .firstSection .rightSection{
+        background-color: blanchedalmond;
+      } */
+      .rightSection img {
+        width: 80%;
+        margin: 50px 0px 0px 0px;
+        border-radius: 30px;
+      }
+
+      .yellow {
+        color: rgb(244, 244, 72);
+      }
+      #element {
+        color: rgb(112, 244, 72);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      main hr {
+        border: 0px;
+        background-color: rgb(84, 167, 239);
+        height: 2px;
+        margin: 40px 84px;
+      }
+      .textgrey {
+        color: grey;
+      }
+      .secondSection .box {
+        background: white;
+        margin: 170px 0px;
+        width: 80vw;
+        height: 2px;
+        display: flex;
+      }
+      .secondSection .vertical {
+        height: 60px;
+        width: 1px;
+        background-color: white;
+        margin: 0px 90px;
+      }
+      .image-top {
+        width: 98px;
+        position: relative;
+        top: -141px;
+        border-radius: 30px;
+        left: -53px;
+      }
+      .vertical-title {
+        position: relative;
+        top: -51px;
+        width: 150px;
+        left: -22px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: -40px;
+        width: 80px;
+        color: grey;
+        left: -21px;
+        font-size: 12px;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background: #321868;
+        color: white;
+        border: 1px solid white;
+        border-radius: 6px;
+        font-size: 15px;
+      }
+      .leftSection .buttons {
+        padding: 50px 0px;
+      }
+      .leftSection .buttons .btn{
+        transition: all 0.3s linear;
+      }
+      .leftSection .buttons .btn:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      .image-top-pr{
+             width: 97px;
+    height: 130px;
+    position: relative;
+    top: -141px;
+    border-radius: 30px;
+    left: -51px;
+      }
+</style>
+<main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi,My name is <span class="yellow">Ambreesh</span>
+          <div>I am a passionate</div>
+          <!-- <div>Web Developer!</div> -->
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn" id="myButton">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="Amsterdam.jpg" alt="Place is Amsterdam" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="textgrey">Where I have travelled so far</span>
+        <h1>Travel Experience</h1>
+        <div class="box">
+          
+          <div class="vertical">
+            <img
+              src="amsthree.jpg"
+              alt="Amsterdam Centraal"
+              class="image-top"
+            />
+            <div class="vertical-title">Netherlands</div>
+            <div class="vertical-desc">
+              Amsterdam is one of the most beautiful place to visit.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="paris.jpg" alt="Amsterdam Centraal" class="image-top" />
+            <div class="vertical-title">France</div>
+            <div class="vertical-desc">
+              Paris is one of the most beautiful place to visit.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="belgium.jpg" alt="Amsterdam Centraal" class="image-top" />
+            <div class="vertical-title">Belgium</div>
+            <div class="vertical-desc">
+              Antwerp is one of the most beautiful place to visit.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="Germany.jpg" alt="Amsterdam Centraal" class="image-top" />
+            <div class="vertical-title">Germany</div>
+            <div class="vertical-desc">
+              Cologne is one of the most beautiful place to visit.
+            </div>
+          </div>
+          <div class="vertical">
+            <img src="Amritsar.jpg" alt="amritsar" class="image-top-pr" />
+            <div class="vertical-title">India</div>
+            <div class="vertical-desc">
+              Amritsar is one of the most beautiful place to visit.
+            </div>
+          </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Traveller",
+          "Chess Player",
+          "App Developer",
+          "Web Developer",
+        ],
+        typeSpeed: 20,
+      });
+    </script>
+    <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+          location.href = "https://github.com/AmbreeshSrivastava25";
+      };
+  </script>
