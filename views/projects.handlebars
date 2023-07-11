@@ -1,1 +1,68 @@
-<h1>This is project page which is rendered</h1>
+<style>
+  section{ /* background-color: aquamarine; */ display: flex; /*
+  align-content:space-evenly; */ justify-content: space-evenly; padding: 10%;
+  min-height: 50vh; } img{ width: 300px; height: 300px; object-fit:
+  cover;border-radius: 30px; } p{ width: 400px; height: 400px; text-align:
+  justify; } .hidden{ opacity: 0; transition: all 2s; transform:
+  translateX(-100%); filter: blur(10px); } .show{ opacity: 1; filter: blur(0);
+  transform: translateX(0%); }
+</style>
+
+<section class="hidden">
+  <div class="left-hidden">
+    <h1>Face Recognition</h1>
+    <p>I implemented a face recognition project using MATLAB by utilizing neural
+      networking techniques. The project involved training the network with a
+      dataset of facial images, extracting facial features, and employing the
+      trained network to recognize and classify faces accurately. Initially, I
+      collected a dataset of facial images and preprocessed them to enhance
+      quality. Then, I designed and trained a neural network using MATLAB's deep
+      learning toolbox. The network learned to extract essential facial features
+      and classify them accurately. Finally, I tested the network's performance
+      on unseen images, achieving reliable face recognition results. Throughout
+      the project, MATLAB provided efficient tools and functions for data
+      processing, network training, and evaluation, enabling successful
+      implementation of the face recognition system.
+    </p>
+  </div>
+  <div class="right-hidden">
+    <img src="facerecog.jpg" alt="AI-recognition" />
+  </div>
+</section>
+<section class="hidden">
+  <div class="left-hidden">
+    <h1>App Development</h1>
+    <p>I developed a Flutter app with Firebase authentication for user login.
+      The app integrated Firebase's authentication services to provide a secure
+      and reliable login experience. Users were able to register an account, log
+      in with their credentials, and access personalized features. Firebase's
+      authentication functionality streamlined the login process, ensuring data
+      privacy and authentication accuracy for the app's users.</p>
+  </div>
+  <div class="right-hidden">
+    <img src="apptwo.jpg" alt="flutter" />
+  </div>
+</section>
+<section class="hidden">
+  <div class="left-hidden">
+    <h1>ECommerce Website</h1>
+    <p>For an online shopping e-commerce website, I created a range of essential
+      artifacts to facilitate the development process. I started by designing
+      use case diagrams to depict various actors, such as customers,
+      administrators, and payment gateways, along with their interactions and
+      system functionalities. Next, I developed data flow diagrams to illustrate
+      the flow of data within the system, including user inputs, order
+      processing, and inventory management. Additionally, I crafted user stories
+      and user cards to capture specific user requirements and their desired
+      functionalities. Finally, I utilized UML diagrams, such as class diagrams
+      and sequence diagrams, to represent the system's structure and dynamic
+      behavior. These artifacts provided a comprehensive understanding of the
+      e-commerce website's functionality, aiding in effective communication and
+      successful development.</p>
+  </div>
+  <div class="right-hidden">
+    <img src="webpic.jpg" alt="webdevpic" />
+  </div>
+</section>
+
+<script defer src="appslide.js"></script>
